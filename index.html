@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Demostración de la Ley de Laplace a partir de un programa que simula la tirada de dos dados. En éste programa se puede determinar la cantidad de veces que se tirarán los dados, se podrá observar los resultados que salieron por cada iteración y la cantidad total de veces que salió cada número por el total de iteraciones."/>
+	<title>Prueba | Ley de Laplace | Dos dados</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" href="C:\Users\lucas\Desktop\LUCAS\LR\LR Logo/LR logotipo fondo negro.png">
+</head>
+<body>
+	<main>
+		<article id="estadistica" class="articulo">
+			<nav class="controles">
+				<input class="inputs" type="text" name="tiradas" id="tiradas" value="100" placeholder="Ingrese la cantidad de veces que se van a tirar los dados: ej.100">
+				<button id="boton">Tirar los dados <i class="fa-solid fa-dice dados"></i></button>
+			</nav>
+			<section class="seccion">
+				<div class="tabla-numeros">
+					<h2>Números que salieron:</h2>
+					<ul class="grilla" id="grilla">
+					</ul>
+				</div>
+				<div class="conjunto">
+					<div class="botones">
+						<button class="boton" id="porcentaje">Porcentaje de tiradas por número</button>
+						<button class="boton" id="cantidad">Cantidad de tiradas por número</button>
+					</div>
+					<div class="barras">
+						<div class="barra-container"><p id="dosP"></p><div class="barra"><div id="dos" class="color"></div></div><p id="2" class="numero">2</p></div>
+						<div class="barra-container"><p id="tresP"></p><div class="barra"><div id="tres" class="color"></div></div><p id="3" class="numero">3</p></div>
+						<div class="barra-container"><p id="cuatroP"></p><div class="barra"><div id="cuatro" class="color"></div></div><p id="4" class="numero">4</p></div>
+						<div class="barra-container"><p id="cincoP"></p><div class="barra"><div id="cinco" class="color"></div></div><p id="5" class="numero">5</p></div>
+						<div class="barra-container"><p id="seisP"></p><div class="barra"><div id="seis" class="color"></div></div><p id="6" class="numero">6</p></div>
+						<div class="barra-container"><p id="sieteP"></p><div class="barra"><div id="siete" class="color"></div></div><p id="7" class="numero">7</p></div>
+						<div class="barra-container"><p id="ochoP"></p><div class="barra"><div id="ocho" class="color"></div></div><p id="8" class="numero">8</p></div>
+						<div class="barra-container"><p id="nueveP"></p><div class="barra"><div id="nueve" class="color"></div></div><p id="9" class="numero">9</p></div>
+						<div class="barra-container"><p id="diezP"></p><div class="barra"><div id="diez" class="color"></div></div><p id="10" class="numero">10</p></div>
+						<div class="barra-container"><p id="onceP"></p><div class="barra"><div id="once" class="color"></div></div><p id="11" class="numero">11</p></div>
+						<div class="barra-container"><p id="doceP"></p><div class="barra"><div id="doce" class="color"></div></div><p id="12" class="numero">12</p></div>
+					</div>
+				</div>
+			</section>
+		</article>
+	</main>
+	<script src="https://kit.fontawesome.com/bd16a1d5bb.js" crossorigin="anonymous"></script>
+	<script src="scripts.js"></script>
+</body>
+</html>
